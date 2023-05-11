@@ -87,10 +87,10 @@
 
                             </li>
                         </ul>        
-                        <a class='menu-trigger'>
+                        <a class='register'>
                             <span></span>
                         </a>
-                        <!-- ***** Menu End ***** -->
+                        <!-- ***** register End ***** -->
                     </nav>
                 </div>
             </div>
@@ -190,13 +190,13 @@ Terima kasih telah bergabung dengan kami dalam membantu memajukan pariwisata lok
     </section>
     <!-- ***** About Area Ends ***** --> 
 
-    <!-- ***** Menu Area Starts ***** -->
+   
     <br><br><br>
     @include("project")
     <br><br><br>
     @include("donasi")
 
-    <!-- ***** Menu Area Ends ***** -->
+   
     @include("contact");
 
     
