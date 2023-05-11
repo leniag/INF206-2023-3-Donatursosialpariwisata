@@ -12,7 +12,7 @@
   @foreach ($projects as $project)
   <div class="daftarpro">
       <div class="tomboldon">
-          <button onclick="window.location.href='donasi.html'">DONASI</button>
+        <a href="{{ route('donasi') }}"><button>DONASI</button></a>
       </div>
       <div class="namapro"><a href="Galeri.html">{{ $project->judul }}</a></div>
       <div class="namapro"><img src="{{ $project->gambar }}" style="width:450px; height: 100px;"></div>
