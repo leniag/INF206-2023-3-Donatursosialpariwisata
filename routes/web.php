@@ -58,4 +58,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
->>>>>>> main
+
+Route::get('/donasi', function () {
+    return view('donasi');
+});
+
