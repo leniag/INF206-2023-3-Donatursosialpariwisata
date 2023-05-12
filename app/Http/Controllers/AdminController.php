@@ -125,6 +125,10 @@ public function viewcreates()
     $data=creates::all();
 
     return view("project",compact("data"));
+
+    
 }
+
+
 
 }
