@@ -52,12 +52,9 @@
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                            <li class="scroll-to-section"><a href="#project">Project</a></li>
-                            <li class="scroll-to-section"><a href="#donasi">Data Donasi</a></li> 
-                            <li class="scroll-to-section"><a href="#create">Create</a></li>
+                            <li class="scroll-to-section"><a href="{{url('/viewcreates')}}">Project</a></li>
                             <li class="scroll-to-section"><a href="#about">About</a></li>
-                            <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
-                            
+                            <li class="scroll-to-section"><a href="#creates">Create</a></li>
 
 
                             <li>
@@ -87,10 +84,10 @@
 
                             </li>
                         </ul>        
-                        <a class='register'>
+                        <a class='menu-trigger'>
                             <span></span>
                         </a>
-                        <!-- ***** register End ***** -->
+                        <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
             </div>
@@ -164,7 +161,8 @@
                         <p>Kami adalah platform donasi online yang bertujuan untuk membantu pariwisata lokal di Indonesia. Kami hadir sebagai solusi untuk membantu para pelaku pariwisata lokal yang membutuhkan dukungan finansial. Melalui platform kami, Anda dapat melakukan donasi kepada para pelaku pariwisata seperti pemandu wisata, pengusaha hotel dan restoran, serta komunitas lokal di sekitar destinasi wisata.Kami berkomitmen untuk menjaga transparansi dan akuntabilitas dalam pengelolaan donasi, sehingga Anda dapat melihat langsung penggunaan dana donasi melalui laporan keuangan yang kami publikasikan secara berkala di website kami.
 
 Terima kasih telah bergabung dengan kami dalam membantu memajukan pariwisata lokal Indonesia! Jika Anda memiliki pertanyaan atau saran, jangan ragu untuk menghubungi kami melalui kontak yang tersedia di website kami. </p>
-                        <div class="row">
+
+<div class="row">
                             <div class="col-4">
                                 <img src="assets/images/about-thumb-01.jpg" alt="">
                             </div>
@@ -188,23 +186,21 @@ Terima kasih telah bergabung dengan kami dalam membantu memajukan pariwisata lok
             </div>
         </div>
     </section>
+
+
     <!-- ***** About Area Ends ***** --> 
 
-   
-    <br><br><br>
-    @include("project")
-    <br><br><br>
-    @include("donasi")
+    <!-- ***** Menu Area Starts ***** -->
+  
 
-   
-    @include("contact");
+    <!-- ***** Menu Area Ends ***** -->
 
+    <!-- ***** Chefs Area Starts ***** -->
     
+    <!-- ***** Chefs Area Ends ***** -->
 
-    @include("create");
+    @include("creates");
 
-   
-    
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
@@ -226,7 +222,7 @@ Terima kasih telah bergabung dengan kami dalam membantu memajukan pariwisata lok
                 </div>
                 <div class="col-lg-4 col-xs-12">
                     <div class="left-text-content">
-                        <p>© Copyright DONATUR SOSIAL PARIWISATA.</p>
+                        <p>© Copyright Donatur Sosial Pariwisata.</p>
                     </div>
                 </div>
             </div>
