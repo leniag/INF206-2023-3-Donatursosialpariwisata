@@ -1,35 +1,82 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daftar project</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/sistem.css">
+
+</head>
+<body>
+    
+
 <section class="section" id="project">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="section-heading">
-                        <h6>Our Project</h6>
-                        <h2>Jika ingin berdonasi silahkan klik tombol donasi</h2>
+                       <center> <h1>Our Project</h1> </center>
+                        <h3>Jika ingin berdonasi silahkan klik tombol <br> donasi pada project yang ingin di donasikan</h3>
                     </div>
                 </div>
             </div>
         </div>
-    <div class="daftarpro">
-  <div class="tomboldon">
-    <button onclick="window.location.href='donasi.html'">DONASI</button>
-</div>
-  <div class="namapro"><a href="Galeri.html"> Perbaikan jalan tempat wisata pantai indah</a></div>
-  <div class="namapro"><img src="assets/images/1.jpg" style="width:450px; height: 100px;"></div>
-  <div class="deskpro"><h3>Deskripsi Project</h3><br> <p>jalan menuju wisata pantai indah akan segera diperbaikipada tangga 10-09-2020. </p></div>
-</div>
+        <body>
+  
+  <div style="position: relative; top: 50px; right: -200;">
+  
+  <table bgcolor="lightblue" border="3px">
+    <tr>
+        <th bgcolor="lightgray" style="padding: 30px" >Name</th>
+        <th bgcolor="lightgray" style="padding: 30px">email</th>
+        <th bgcolor="lightgray" style="padding: 30px">phone</th>
+        <th bgcolor="lightgray" style="padding: 30px">judul project</th>
+        <th bgcolor="lightgray" style="padding: 30px">deskripsi</th>
+        <th bgcolor="lightgray" style="padding: 30px">gambar</th>
+        <th bgcolor="lightgray" style="padding: 30px">Donasi</th>
 
-<div class="daftarpro">
-  <div class="tomboldon">
-    <button onclick="window.location.href='donasi.html'">DONASI</button>
-</div>
-  <div class="namapro"><a href="Galeri.html">perbaikan fasilitas wisata kutamalaka</a></div>
-  <div class="namapro"><img src="assets/images/2.jpg" style="width:450px; height: 100px;"></div>
-  <div class="deskpro"><h3>Deskripsi Project</h3><br> <p>wisata kutamalaka mengalami kerusakan fasilitas. rencana akan dilakukan perbaikan pada tanggal 01-01-2001</p></div>
-</div>
-                     
-                        </div>
-                    </div>
+    </tr>
+
+    @foreach($data as $data)
+    <tr align="center">
+        <td>{{$data->name}}</td>
+        <td>{{$data->email}}</td>
+        <td>{{$data->phone}}</td>
+        <td>{{$data->judul}}</td>
+        <td>{{$data->deskripsi}}</td>
+        <td><img height="200" width="200" src="/gambar/{{$data->gambar}}"></td>
+        <td>    <button ><a href="#donasi"> DONASI</button></a>
+</td>
+
+    </tr>
+
+    @endforeach
+</table>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+
+@include("donasi")
+
+
+  </div>
+  
+  
+  
+  </div>
                 </div>
             </div>
         </div>
     </section>
+
+    </body>
+</html>
+
+
+
+
