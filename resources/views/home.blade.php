@@ -202,6 +202,10 @@ Terima kasih telah bergabung dengan kami dalam membantu memajukan pariwisata lok
 
     @include("creates");
 
+    @include("contact");
+
+
+
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
