@@ -54,6 +54,7 @@
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="{{url('/viewcreates')}}">Project</a></li>
                             <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#contact">Contact</a></li>
                             <li class="scroll-to-section"><a href="#creates">Create</a></li>
 
 
