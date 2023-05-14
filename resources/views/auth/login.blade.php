@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<bodysss>    
+
+
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
@@ -46,3 +53,6 @@
         </form>
     </x-authentication-card>
 </x-guest-layout>
+
+</body>
+</html>
