@@ -73,8 +73,8 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="section-heading">
-                       <center> <h1>Our Project</h1> </center>
-                        <h3>Jika ingin berdonasi silahkan klik tombol <br> donasi pada project yang ingin di donasikan</h3>
+                       <center> <h1>Our Project</h1> </center><br>
+                        <br><br><br><h3>Jika ingin berdonasi silahkan klik tombol donasi pada project yang ingin di donasikan</h3>
                     </div>
                 </div>
             </div>
