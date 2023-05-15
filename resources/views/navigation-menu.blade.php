@@ -4,18 +4,9 @@
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-                <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
-                        <x-application-mark class="block h-9 w-auto" />
-                    </a>
-                </div>
+               
 
-                <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-nav-link>
-                </div>
+               
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
@@ -53,18 +44,16 @@
                                         </x-dropdown-link>
                                     @endcan
 
+                                    <div class="border-t border-gray-200"></div>
+
                                     <!-- Team Switcher -->
-                                    @if (Auth::user()->allTeams()->count() > 1)
-                                        <div class="border-t border-gray-200"></div>
+                                    <div class="block px-4 py-2 text-xs text-gray-400">
+                                        {{ __('Switch Teams') }}
+                                    </div>
 
-                                        <div class="block px-4 py-2 text-xs text-gray-400">
-                                            {{ __('Switch Teams') }}
-                                        </div>
-
-                                        @foreach (Auth::user()->allTeams() as $team)
-                                            <x-switchable-team :team="$team" />
-                                        @endforeach
-                                    @endif
+                                    @foreach (Auth::user()->allTeams() as $team)
+                                        <x-switchable-team :team="$team" />
+                                    @endforeach
                                 </div>
                             </x-slot>
                         </x-dropdown>
@@ -200,18 +189,16 @@
                         </x-responsive-nav-link>
                     @endcan
 
+                    <div class="border-t border-gray-200"></div>
+
                     <!-- Team Switcher -->
-                    @if (Auth::user()->allTeams()->count() > 1)
-                        <div class="border-t border-gray-200"></div>
+                    <div class="block px-4 py-2 text-xs text-gray-400">
+                        {{ __('Switch Teams') }}
+                    </div>
 
-                        <div class="block px-4 py-2 text-xs text-gray-400">
-                            {{ __('Switch Teams') }}
-                        </div>
-
-                        @foreach (Auth::user()->allTeams() as $team)
-                            <x-switchable-team :team="$team" component="responsive-nav-link" />
-                        @endforeach
-                    @endif
+                    @foreach (Auth::user()->allTeams() as $team)
+                        <x-switchable-team :team="$team" component="responsive-nav-link" />
+                    @endforeach
                 @endif
             </div>
         </div>

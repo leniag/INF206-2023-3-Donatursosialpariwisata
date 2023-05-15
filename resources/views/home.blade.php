@@ -54,6 +54,7 @@
                             <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
                             <li class="scroll-to-section"><a href="{{url('/viewcreates')}}">Project</a></li>
                             <li class="scroll-to-section"><a href="#about">About</a></li>
+                            <li class="scroll-to-section"><a href="#contact">Contact</a></li>
                             <li class="scroll-to-section"><a href="#creates">Create</a></li>
 
 
@@ -151,6 +152,7 @@
     <!-- ***** About Area Starts ***** -->
     <section class="section" id="about">
         <div class="container">
+            
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="left-text-content">
@@ -178,7 +180,7 @@ Terima kasih telah bergabung dengan kami dalam membantu memajukan pariwisata lok
                 <div class="col-lg-6 col-md-6 col-xs-12">
                     <div class="right-content">
                         <div class="thumb">
-                            <a rel="nofollow" href="http://youtube.com"><i class="fa fa-play"></i></a>
+                            <a rel="nofollow" href="https://www.youtube.com/watch?v=5UNQKrtqvhc"><i class="fa fa-play"></i></a>
                             <img src="assets/images/about-video-bg.jpg" alt="">
                         </div>
                     </div>
@@ -198,11 +200,16 @@ Terima kasih telah bergabung dengan kami dalam membantu memajukan pariwisata lok
     <!-- ***** Chefs Area Starts ***** -->
     
     <!-- ***** Chefs Area Ends ***** -->
+    @include("contact");
 
     @include("creates");
 
+
+
+
     <!-- ***** Footer Start ***** -->
     <footer>
+        
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-xs-12">

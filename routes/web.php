@@ -20,9 +20,8 @@ use App\Http\Controllers\AdminController;
 Route::get("/", [HomeController::class, "index"]);
 
 
-Route::get("/foodmenu", [AdminController::class, "foodmenu"]);
 
-Route::post("/uploadfood", [AdminController::class, "upload"]);
+
 
 
 Route::get("/deletemenu/{id}", [AdminController::class, "deletemenu"]);
@@ -37,9 +36,17 @@ Route::get("/users", [AdminController::class, "user"]);
 Route::get("/deleteuser/{id}", [AdminController::class, "deleteuser"]);
 
 
-Route::post("/create", [AdminController::class, "create"]);
+Route::post("/creates", [AdminController::class, "creates"]);
 
-Route::get("/viewreservation", [AdminController::class, "viewreservation"]);
+Route::post("/donasi", [HomeController::class, "donasi"]);
+
+Route::post("/contact", [HomeController::class, "contact"]);
+
+
+
+Route::get("/viewcreates", [AdminController::class, "viewcreates"]);
+
+
 
 
 Route::get("/redirects", [HomeController::class, "redirects"]);
@@ -56,3 +63,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+
+
