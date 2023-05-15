@@ -66,3 +66,5 @@ Route::middleware([
 Route::get('/home', function () {
     return view('home');
 })->name('home');
+
+

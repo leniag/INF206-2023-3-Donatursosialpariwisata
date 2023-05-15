@@ -41,11 +41,11 @@
 
 
           <li class="nav-item menu-items">
-            <a class="nav-link" href="{{url('/viewreservation')}}">
+            <a class="nav-link" href="{{url('/viewcreates')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-chart-bar"></i>
               </span>
-              <span class="menu-title">Reservasi</span>
+              <span class="menu-title">Data Project</span>
             </a>
           </li>
 </nav>
